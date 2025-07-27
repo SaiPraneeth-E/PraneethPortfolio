@@ -1,0 +1,107 @@
+I can help you represent the content of your resume in a structured format using code, such as JSON, which is commonly used for data exchange. This is not for direct display as a resume on a webpage, but rather for programmatic access and parsing of the information.
+
+Here's your resume content converted into a JSON object:
+
+```json
+{
+  "personal_details": {
+    "name": "EDUPULAPATI SAI PRANEETH",
+    "phone": "+918977771494",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  [cite_start]"summary": "Detail-oriented Computer Science student with a strong foundation in data analysis, statistics, and machine learning. Experienced in Python, SQL, and data visualization with a passion for uncovering insights from complex datasets. Proficient in tools like Pandas, Matplotlib, Seaborn, and Excel. Eager to apply analytical thinking and technical skills in real-world data-driven environments."[cite: 3, 4, 5],
+  "education": [
+    {
+      "degree_certificate": "B.Tech (CSE with AI/ML)",
+      "institute_board": "VIT-AP University",
+      "cgpa_percentage": "8.25 (current CGPA)",
+      "year": "2023 Present"
+    },
+    {
+      "degree_certificate": "Intermediate (MPC)",
+      "institute_board": "Narayana Junior College (AP Intermediate Board)",
+      "cgpa_percentage": "92.9%",
+      "year": "2023"
+    },
+    {
+      "degree_certificate": "Class X (CBSE)",
+      "institute_board": "Avenues CBSE School",
+      "cgpa_percentage": "77.9%",
+      "year": "2021"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Employee Salary Prediction App",
+      "date": "Jul. 2024",
+      "github": "GitHub",
+      [cite_start]"description": "Built and deployed an ML model to predict employee salaries using Python."[cite: 10],
+      "details": [
+        [cite_start]"Performed data cleaning, EDA, and feature engineering to prepare dataset for modeling."[cite: 13],
+        [cite_start]"Trained and compared models using Scikit-learn; deployed best-performing model via Streamlit."[cite: 15],
+        [cite_start]"Integrated Ngrok for real-time predictions through a user-friendly web interface." [cite: 16]
+      ]
+    },
+    {
+      "name": "Weather Forecasting Dashboard",
+      "date": "Mar. 2024",
+      "github": "GitHub",
+      [cite_start]"description": "Analyzed weather patterns using real-time API data and visualized trends."[cite: 18],
+      "details": [
+        [cite_start]"Fetched and cleaned weather data using REST APIs and Python."[cite: 19],
+        [cite_start]"Built visualizations using Matplotlib and Seaborn to identify weather trends." [cite: 20]
+      ]
+    },
+    {
+      "name": "Language Usage Insights - Translator App",
+      "date": "Арт. 2024",
+      "github": "GitHub",
+      [cite_start]"description": "Analyzed translation usage data to identify popular language pairs and usage frequency."[cite: 21],
+      "details": [
+        [cite_start]"Logged user input/output pairs for data analysis on translation patterns."[cite: 22],
+        [cite_start]"Generated insights using Python and visualized with bar plots and pie charts." [cite: 23]
+      ]
+    }
+  ],
+  "technical_skills": {
+    [cite_start]"languages": ["Python", "SQL", "Java", "HTML", "CSS"][cite: 29],
+    [cite_start]"libraries_tools": ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn", "Streamlit", "Excel", "Power BI"][cite: 30],
+    [cite_start]"concepts": ["EDA", "Data Cleaning", "Visualization", "Regression", "Classification", "Statistics", "Hypothesis Testing"][cite: 31],
+    [cite_start]"platforms": ["Google Colab", "Jupyter Notebook", "GitHub", "VS Code"][cite: 32],
+    [cite_start]"ai_tools": ["ChatGPT", "Gemini AI Studio", "Copilot", "Perplexity Al"] [cite: 33]
+  },
+  "certifications": [
+    [cite_start]"Data Analysis with Python Cognitive Class"[cite: 35],
+    [cite_start]"Prompt Engineering DeepLearning. AI"[cite: 36],
+    [cite_start]"AI Fundamentals IBM Skills Build"[cite: 37],
+    [cite_start]"AWS Cloud Practitioner Essentials Amazon Web Services"[cite: 38, 39],
+    [cite_start]"Agile Scrum in Practice Infosys Springboard"[cite: 40],
+    [cite_start]"Gen AI and ChatGPT BlackBucks Group" [cite: 41]
+  ],
+  "co_curricular_activities": [
+    {
+      "role": "Core Team Member Vitopia",
+      "year": "2025"
+    },
+    {
+      "role": "Vice President ICMC Club",
+      "year": "2024 2025"
+    },
+    {
+      "role": "Correspondent Chaitra Telugu Association",
+      "year": "2024 Present"
+    },
+    {
+      "role": "Core Team Member Photography Club, VIT-AP",
+      "year": "2024 Present"
+    },
+    {
+      "role": "Marketing Team Member GFG Student Chapter, VIT-AP",
+      "year": "2024"
+    }
+  ],
+  [cite_start]"hobbies_interests": ["Cooking", "Photography", "Travelling", "Sports", "Movies", "Current Affairs"] [cite: 45]
+}
+```
