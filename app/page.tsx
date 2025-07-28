@@ -1683,7 +1683,7 @@ export default function TechPortfolio() {
                 asChild
               >
                 <a
-                  href="https://www.linkedin.com/in/edupulapatisaipraneeth/"
+                  href="mailto:saipraneeth080805@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
               >
