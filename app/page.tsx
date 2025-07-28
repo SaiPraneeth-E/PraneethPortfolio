@@ -1099,6 +1099,10 @@ export default function TechPortfolio() {
                       <Phone className="h-4 w-4 mr-1" />
                       +91 8977771494
                     </div>
+                    <div className="flex items-center justify-center text-gray-400 text-sm">
+                      <Mail className="h-4 w-4 mr-1" />
+                      saipraneeth080805@gmail.com
+                    </div>
                   </div>
 
                   {/* Tech Stats */}
@@ -1152,7 +1156,7 @@ export default function TechPortfolio() {
                     ].map((social, index) => (
                       <motion.a
                         key={index}
-                        href={social.href}
+                        href="mailto:saipraneeth080805@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`w-10 h-10 bg-black/50 rounded-full flex items-center justify-center ${social.color} transition-all duration-300 border border-cyan-400/30 network-node`}
