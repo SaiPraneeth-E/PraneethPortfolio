@@ -1682,11 +1682,16 @@ export default function TechPortfolio() {
                 style={{ fontFamily: "var(--font-orbitron)" }}
                 asChild
               >
-                <a href="mailto:saipraneeth080805@gmail.com">
-                  <Mail className="mr-2 h-5 w-5" />
-                  SEND EMAIL
+                <a
+                  href="https://www.linkedin.com/in/edupulapatisaipraneeth/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+              >
+                <Mail className="mr-2 h-5 w-5" />
+                SEND MESSAGE
                 </a>
-              </Button>
+            </Button>
+
             </div>
           </motion.div>
         </div>
