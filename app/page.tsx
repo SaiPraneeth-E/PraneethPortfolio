@@ -1149,10 +1149,9 @@ export default function TechPortfolio() {
                       { icon: Github, href: "https://github.com/SaiPraneeth-E", color: "hover:bg-gray-600" },
                       {
                         icon: Linkedin,
-                        href: "www.linkedin.com/in/edupulapatisaipraneeth",
+                        href: "https://www.linkedin.com/in/edupulapatisaipraneeth/",
                         color: "hover:bg-blue-600",
-                      },
-                      { icon: Mail, href: "mailto:saipraneeth080805@gmail.com?subject=Job%20Opportunity&body=Hello%20Sai%20Praneeth,", color: "hover:bg-red-600" },
+                      }
                     ].map((social, index) => (
                       <motion.a
                         key={index}
