@@ -1680,21 +1680,20 @@ export default function TechPortfolio() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button
-                size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-8 neon-glow"
-                style={{ fontFamily: "var(--font-orbitron)" }}
-                asChild
-              >
-                <a
-                  href="mailto:saipraneeth080805@gmail.com?subject=Job%20Opportunity&body=Hello%20Sai%20Praneeth,"
-                  target="_blank"
-                  rel="noopener noreferrer"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                SEND MESSAGE
+                  size="lg"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-8 neon-glow"
+                  style={{ fontFamily: "var(--font-orbitron)" }}
+                  asChild
+                >
+                  <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=saipraneeth080805@gmail.com&su=Job%20Opportunity&body=Hello%20Sai%20Praneeth,"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Mail className="mr-2 h-5 w-5" />
+                    SEND MESSAGE
                 </a>
-            </Button>
-
+              </Button>
             </div>
           </motion.div>
         </div>
