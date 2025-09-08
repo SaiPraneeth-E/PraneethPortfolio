@@ -42,27 +42,11 @@ import {
   Home,
   ArrowUp,
 } from "lucide-react"
+import "lenis/dist/lenis.css"
+import useLenis from "@/hooks/use-lenis"
 import Image from "next/image"
 import * as THREE from "three"
 
-// Add smooth scroll utility function
-const smoothScrollTo = (elementId, offset = 0) => {
-  const element = document.getElementById(elementId)
-  if (element) {
-    const elementPosition = element.getBoundingClientRect().top + window.pageYOffset
-    const offsetPosition = elementPosition - offset
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    })
-  }
-}
-
-// Update the scrollToSection function
-const scrollToSection = (sectionId) => {
-  smoothScrollTo(sectionId, 80) // 80px offset for fixed nav
-}
 
 // Matrix Rain Component
 const MatrixRain = () => {
@@ -443,6 +427,13 @@ const TechProgressRing = ({ percentage, size = 80, strokeWidth = 6, color = "#00
 
 // Add smooth scroll state and intersection observer
 export default function TechPortfolio() {
+  const lenis = useLenis()
+
+  const scrollToSection = (sectionId: string) => {
+    if (lenis) {
+      lenis.scrollTo(`#${sectionId}`, { offset: -80 })
+    }
+  }
   const [activeSection, setActiveSection] = useState("home")
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, {
@@ -854,11 +845,9 @@ export default function TechPortfolio() {
 
   // Update scroll to top function
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-      // Add custom easing if supported
-    })
+    if (lenis) {
+      lenis.scrollTo(0)
+    }
   }
 
   return (
