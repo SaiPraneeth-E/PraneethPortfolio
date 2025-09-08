@@ -1099,10 +1099,6 @@ export default function TechPortfolio() {
                       <Phone className="h-4 w-4 mr-1" />
                       +91 8977771494
                     </div>
-                    <div className="flex items-center justify-center text-gray-400 text-sm">
-                      <Mail className="h-4 w-4 mr-1" />
-                      saipraneeth080805@gmail.com
-                    </div>
                   </div>
 
                   {/* Tech Stats */}
@@ -1149,7 +1145,7 @@ export default function TechPortfolio() {
                       { icon: Github, href: "https://github.com/SaiPraneeth-E", color: "hover:bg-gray-600" },
                       {
                         icon: Linkedin,
-                        href: "www.linkedin.com/in/edupulapatisaipraneeth",
+                        href: "https://www.linkedin.com/in/edupulapatisaipraneeth/",
                         color: "hover:bg-blue-600",
                       },
                       { icon: Mail, href: "mailto:saipraneeth080805@gmail.com?subject=Job%20Opportunity&body=Hello%20Sai%20Praneeth,", color: "hover:bg-red-600" },
