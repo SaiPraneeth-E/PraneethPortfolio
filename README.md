@@ -41,5 +41,3 @@ Hi, I'm **Edupulapati Sai Praneeth**, a passionate Computer Science Engineering 
 Let’s connect and create something impactful!
 
 ---
-
-

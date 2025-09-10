@@ -11,7 +11,6 @@ import {
   Github,
   Linkedin,
   Mail,
-  Download,
   ChevronDown,
   Menu,
   X,
@@ -42,11 +41,9 @@ import {
   Home,
   ArrowUp,
 } from "lucide-react"
-import "lenis/dist/lenis.css"
-import useLenis from "@/hooks/use-lenis"
+import useSmoothScroll from "@/hooks/use-smooth-scroll"
 import Image from "next/image"
 import * as THREE from "three"
-
 
 // Matrix Rain Component
 const MatrixRain = () => {
@@ -427,13 +424,12 @@ const TechProgressRing = ({ percentage, size = 80, strokeWidth = 6, color = "#00
 
 // Add smooth scroll state and intersection observer
 export default function TechPortfolio() {
-  const lenis = useLenis()
+  const { scrollTo } = useSmoothScroll()
 
   const scrollToSection = (sectionId: string) => {
-    if (lenis) {
-      lenis.scrollTo(`#${sectionId}`, { offset: -80 })
-    }
+    scrollTo(sectionId, { duration: 800 })
   }
+
   const [activeSection, setActiveSection] = useState("home")
   const { scrollYProgress } = useScroll()
   const scaleX = useSpring(scrollYProgress, {
@@ -746,7 +742,8 @@ export default function TechPortfolio() {
       date: "2025",
       category: "Generative AI ",
       level: "Professional",
-      description: "Completed the 'Principles of Generative AI' certification, gaining hands-on experience with foundational concepts, tools, and real-world applications of generative models",
+      description:
+        "Completed the 'Principles of Generative AI' certification, gaining hands-on experience with foundational concepts, tools, and real-world applications of generative models",
       skills: ["Software Engineering", "Generative AI", "System Architecture", "Problem Solving"],
     },
     {
@@ -756,7 +753,8 @@ export default function TechPortfolio() {
       date: "2025",
       category: "Generative AI ",
       level: "Professional",
-      description: "Completed the 'OpenAI Generative Pre-trained Transformer 3 (GPT-3) for developers' certification, gaining hands-on experience with foundational concepts, tools, and real-world applications of generative models",
+      description:
+        "Completed the 'OpenAI Generative Pre-trained Transformer 3 (GPT-3) for developers' certification, gaining hands-on experience with foundational concepts, tools, and real-world applications of generative models",
       skills: ["Software Engineering", "Generative AI", "System Architecture", "Problem Solving"],
     },
   ]
@@ -845,9 +843,7 @@ export default function TechPortfolio() {
 
   // Update scroll to top function
   const scrollToTop = () => {
-    if (lenis) {
-      lenis.scrollTo(0)
-    }
+    scrollTo(0, { duration: 600 })
   }
 
   return (
@@ -1137,7 +1133,11 @@ export default function TechPortfolio() {
                         href: "https://www.linkedin.com/in/edupulapatisaipraneeth/",
                         color: "hover:bg-blue-600",
                       },
-                      { icon: Mail, href: "mailto:saipraneeth080805@gmail.com?subject=Job%20Opportunity&body=Hello%20Sai%20Praneeth,", color: "hover:bg-red-600" },
+                      {
+                        icon: Mail,
+                        href: "mailto:saipraneeth080805@gmail.com?subject=Job%20Opportunity&body=Hello%20Sai%20Praneeth,",
+                        color: "hover:bg-red-600",
+                      },
                     ].map((social, index) => (
                       <motion.a
                         key={index}
@@ -1675,12 +1675,11 @@ export default function TechPortfolio() {
                   href="mailto:saipraneeth080805@gmail.com?subject=Job%20Opportunity&body=Hello%20Sai%20Praneeth,"
                   target="_blank"
                   rel="noopener noreferrer"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                SEND MESSAGE
+                >
+                  <Mail className="mr-2 h-5 w-5" />
+                  SEND MESSAGE
                 </a>
-            </Button>
-
+              </Button>
             </div>
           </motion.div>
         </div>
