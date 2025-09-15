@@ -215,6 +215,22 @@ const HoloBrain = () => {
   const brainRef = useRef()
   const synapseRef = useRef([])
 
+  const dataNodes = React.useMemo(() => {
+    return Array.from({ length: 15 }).map((_, i) => {
+      const radius = 2 + Math.random()
+      const theta = Math.random() * Math.PI * 2
+      const phi = Math.random() * Math.PI
+      return {
+        id: i,
+        position: [
+          radius * Math.sin(phi) * Math.cos(theta),
+          radius * Math.sin(phi) * Math.sin(theta),
+          radius * Math.cos(phi),
+        ],
+      }
+    })
+  }, [])
+
   useFrame((state) => {
     if (brainRef.current) {
       brainRef.current.rotation.y = state.clock.elapsedTime * 0.3
@@ -268,25 +284,11 @@ const HoloBrain = () => {
       })}
 
       {/* Floating data nodes */}
-      {Array.from({ length: 15 }).map((_, i) => {
-        const radius = 2 + Math.random()
-        const theta = Math.random() * Math.PI * 2
-        const phi = Math.random() * Math.PI
-
-        return (
-          <Sphere
-            key={`data-node-${i}`}
-            position={[
-              radius * Math.sin(phi) * Math.cos(theta),
-              radius * Math.sin(phi) * Math.sin(theta),
-              radius * Math.cos(phi),
-            ]}
-            args={[0.05]}
-          >
-            <meshStandardMaterial color="#00ff88" emissive="#00ff88" emissiveIntensity={0.8} />
-          </Sphere>
-        )
-      })}
+      {dataNodes.map((node) => (
+        <Sphere key={`data-node-${node.id}`} position={node.position} args={[0.05]}>
+          <meshStandardMaterial color="#00ff88" emissive="#00ff88" emissiveIntensity={0.8} />
+        </Sphere>
+      ))}
     </group>
   )
 }
@@ -426,7 +428,7 @@ const TechProgressRing = ({ percentage, size = 80, strokeWidth = 6, color = "#00
 export default function TechPortfolio() {
   const { scrollTo } = useSmoothScroll()
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = (sectionId) => {
     scrollTo(sectionId, { duration: 800 })
   }
 
@@ -1133,21 +1135,11 @@ export default function TechPortfolio() {
                         href: "https://www.linkedin.com/in/edupulapatisaipraneeth/",
                         color: "hover:bg-blue-600",
                       },
-                      <Button
-  size="lg"
-  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-semibold px-8 neon-glow"
-  style={{ fontFamily: "var(--font-orbitron)" }}
-  asChild
->
-  <a
-    href="https://mail.google.com/mail/?view=cm&fs=1&to=saipraneeth080805@gmail.com&su=Job%20Opportunity&body=Hello%20Sai%20Praneeth,"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <Mail className="mr-2 h-5 w-5" />
-    SEND MESSAGE
-  </a>
-</Button>
+                      {
+                        icon: Mail,
+                        href: "https://mail.google.com/mail/?view=cm&fs=1&to=saipraneeth080805@gmail.com&su=Job%20Opportunity&body=Hello%20Sai%20Praneeth,",
+                        color: "hover:bg-blue-600",
+                      },
                     ].map((social, index) => (
                       <motion.a
                         key={index}
@@ -1682,7 +1674,7 @@ export default function TechPortfolio() {
                 asChild
               >
                 <a
-                  href="mailto:saipraneeth080805@gmail.com?subject=Job%20Opportunity&body=Hello%20Sai%20Praneeth,"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=saipraneeth080805@gmail.com&su=Job%20Opportunity&body=Hello%20Sai%20Praneeth,"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
