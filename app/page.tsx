@@ -534,8 +534,7 @@ export default function TechPortfolio() {
     {
       id: 1,
       title: "Weather Forecasting Website",
-      description:
-        "Real-time weather data application built with HTML, CSS, JavaScript, and Flask for any location worldwide.",
+      description: "Real-time weather data application built with HTML, CSS, JavaScript, and Flask for any location worldwide.",
       category: "Web Development",
       tech: ["HTML", "CSS", "JavaScript", "Flask", "Weather API"],
       github: "https://github.com/saipraneeth/weather-app",
@@ -553,8 +552,7 @@ export default function TechPortfolio() {
     {
       id: 2,
       title: "Language Translator Web App",
-      description:
-        "Multi-language translation application with clean UI and real-time translation capabilities using external APIs.",
+      description: "Multi-language translation application with clean UI and real-time translation capabilities using external APIs.",
       category: "Web Development",
       tech: ["HTML", "CSS", "JavaScript", "Translation API", "Bootstrap"],
       github: "https://github.com/saipraneeth/language-translator",
@@ -570,30 +568,27 @@ export default function TechPortfolio() {
       ],
     },
     {
-  id: 3,
-  title: "Quantapath - Smart Route Optimization System",
-  description:
-    "Intelligent route optimization platform that calculates efficient delivery paths using optimization algorithms and real-time map data to reduce travel time and improve logistics efficiency.",
-  category: "Software/AI",
-  tech: ["Python", "JavaScript", "Google Maps API", "Optimization Algorithms", "HTML", "CSS"],
-  github: "https://github.com/SaiPraneeth-E/QuantaPath",
-  live: "https://quanta-path-setup.vercel.app/",
-  date: "2025",
-  team: "Team Project",
-  status: "Completed",
-  features: [
-    "Optimized route calculation",
-    "Real-time map integration",
-    "Distance and time estimation",
-    "User-friendly interface",
-  ],
-}
-
+      id: 3,
+      title: "Quantapath - Smart Route Optimization System",
+      description: "Intelligent route optimization platform that calculates efficient delivery paths using optimization algorithms and real-time map data to reduce travel time and improve logistics efficiency.",
+      category: "Software/AI",
+      tech: ["Python", "JavaScript", "Google Maps API", "Optimization Algorithms", "HTML", "CSS"],
+      github: "https://github.com/SaiPraneeth-E/QuantaPath",
+      live: "https://quanta-path-setup.vercel.app/",
+      date: "2025",
+      team: "Team Project",
+      status: "Completed",
+      features: [
+        "Optimized route calculation",
+        "Real-time map integration",
+        "Distance and time estimation",
+        "User-friendly interface",
+      ],
+    },
     {
       id: 4,
       title: "Employee Salary Prediction App",
-      description:
-        "Machine Learning application to classify employee income with interactive web interface and both single and batch predictions.",
+      description: "Machine Learning application to classify employee income with interactive web interface and both single and batch predictions.",
       category: "Machine Learning",
       tech: ["Python", "Scikit-learn", "Streamlit", "Pandas", "Ngrok"],
       github: "https://github.com/saipraneeth/salary-predictor",
@@ -609,25 +604,23 @@ export default function TechPortfolio() {
       ],
     },
     {
-  id: 4,
-  title: "AuditX - AI Powered Government Auditing Platform",
-  description:
-    "AI-driven auditing platform that automates document analysis using NLP to improve audit efficiency, reduce manual review time, and generate intelligent insights.",
-  category: "AI/Software",
-  tech: ["Python", "OpenAI API", "NLP", "Streamlit", "JavaScript", "HTML", "CSS"],
-  github: "https://github.com/SaiPraneeth-E/AuditX",
-  live: "https://auditx-gdg.vercel.app/",
-  date: "2025",
-  team: "Team Project",
-  status: "Completed",
-  features: [
-    "AI-based document analysis",
-    "Automated data extraction",
-    "Intelligent report generation",
-    "User-friendly dashboard",
-  ],
-}
-
+      id: 5,
+      title: "AuditX - AI Powered Government Auditing Platform",
+      description: "AI-driven auditing platform that automates document analysis using NLP to improve audit efficiency, reduce manual review time, and generate intelligent insights.",
+      category: "AI/Software",
+      tech: ["Python", "OpenAI API", "NLP", "Streamlit", "JavaScript", "HTML", "CSS"],
+      github: "https://github.com/SaiPraneeth-E/AuditX",
+      live: "https://auditx-gdg.vercel.app/",
+      date: "2025",
+      team: "Team Project",
+      status: "Completed",
+      features: [
+        "AI-based document analysis",
+        "Automated data extraction",
+        "Intelligent report generation",
+        "User-friendly dashboard",
+      ],
+    },
   ]
   // Certifications data
   const certifications = [
