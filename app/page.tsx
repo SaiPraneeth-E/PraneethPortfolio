@@ -621,7 +621,8 @@ export default function TechPortfolio() {
         "User-friendly dashboard",
       ],
     },
-  ]
+  ];
+
   // Certifications data
   const certifications = [
     {
